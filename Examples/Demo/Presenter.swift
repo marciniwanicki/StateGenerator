@@ -1,5 +1,5 @@
 //
-//  RandomImageGeneratorDemoPresenter.swift
+//  Presenter.swift
 //  StateGeneratorExamples
 //
 //  Created by Marcin Iwanicki on 25/03/2018.
@@ -10,8 +10,8 @@ import Foundation
 import StateGenerator
 import UIKit
 
-class RandomImageGeneratorDemoPresenter {
-
+class Presenter {
+    
     private let generator = StateGenerator()
 
     deinit {

@@ -19,14 +19,14 @@ protocol RandomImageGeneratorDemoView: class {
 
 class RandomImageGeneratorDemoViewController: UIViewController {
 
-    fileprivate var presenter: RandomImageGeneratorDemoPresenter!
+    fileprivate var presenter: Presenter!
 
     @IBOutlet fileprivate var imageViews: [UIImageView]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        presenter = RandomImageGeneratorDemoPresenter(view: self)
+        presenter = Presenter(view: self)
     }
 }
 
