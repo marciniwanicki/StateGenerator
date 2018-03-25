@@ -9,3 +9,4 @@ install:
 script:
   - ./Scripts/swiftlint.sh
   - ./Scripts/build_and_test.sh
+  - ./Scripts/build_examples.sh
