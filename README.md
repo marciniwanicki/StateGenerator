@@ -15,10 +15,11 @@ StateGenerator is a Swift library that allows to quickly simulate different mode
    <tr>
       <td>
          <div class="highlight highlight-source-swift">
-<pre>// private let simulator = Simulator() as an instance variable
+<pre>
 let size = CGSize(width: 400, height: 600)
 let delay: TimeInterval = 1.0
 let imageGenerator = G.randomImage(size: size)
+
 simulator
    .begin()
    .wait(delay)
