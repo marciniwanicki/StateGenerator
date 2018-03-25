@@ -7,18 +7,19 @@
 //
 
 import Foundation
+import UIKit
 
-class RainbowColorsGenerator: IndexGenerator {
+public class RainbowColorsGenerator: IndexGenerator {
 
-    typealias T = UIColor
+    public typealias T = UIColor
 
-    let count: Int
+    public let count: Int
 
-    init(count: Int) {
+    public init(count: Int) {
         self.count = count
     }
 
-    func generate(index: Int) -> UIColor {
+    public func generate(index: Int) -> UIColor {
         return UIColor(hue: CGFloat(index) / CGFloat(count), saturation: 1.0, brightness: 1.0, alpha: 1.0)
     }
 }

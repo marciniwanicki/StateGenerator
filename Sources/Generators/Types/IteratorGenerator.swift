@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol IteratorGenerator {
+public protocol IteratorGenerator {
 
     associatedtype I: Sequence
 

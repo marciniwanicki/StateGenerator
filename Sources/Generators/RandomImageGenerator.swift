@@ -7,23 +7,24 @@
 //
 
 import Foundation
+import UIKit
 
-class RandomImageGenerator: SingleValueGenerator {
+public class RandomImageGenerator: SingleValueGenerator {
 
-    typealias T = UIImage
+    public typealias T = UIImage
 
     private let size: CGSize
     private let colorsGenerator = RainbowColorsGenerator(count: 30)
 
-    init(size: CGSize) {
+    public init(size: CGSize) {
         self.size = size
     }
 
-    func generate() -> UIImage {
+    public func generate() -> UIImage {
         UIGraphicsBeginImageContext(size)
         let context = UIGraphicsGetCurrentContext()!
 
-        (0..<30).forEach { drawEllipse($0, context) }
+        (0..<30).forEach { drawCircle($0, context) }
 
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
@@ -31,7 +32,7 @@ class RandomImageGenerator: SingleValueGenerator {
         return image!
     }
 
-    private func drawEllipse(_ index: Int, _ context: CGContext) {
+    private func drawCircle(_ index: Int, _ context: CGContext) {
         let color = colorsGenerator.generate(index: index)
         let x = rand(from: -size.width / 2, to: size.width)
         let y = rand(from: -size.height, to: size.height)

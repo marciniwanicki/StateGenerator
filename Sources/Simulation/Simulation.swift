@@ -1,5 +1,5 @@
 //
-//  SingleValueGenerator.swift
+//  Simulation.swift
 //  StateGenerator
 //
 //  Created by Marcin Iwanicki on 25/03/2018.
@@ -8,9 +8,11 @@
 
 import Foundation
 
-public protocol SingleValueGenerator {
+public protocol Simulation {
 
-    associatedtype T
+    func start()
 
-    func generate() -> T
+    func stop()
+
+    func reset()
 }

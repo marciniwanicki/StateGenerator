@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510F157B2067D15600B2B87A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F157A2067D15600B2B87A /* ListViewController.swift */; };
+		510F15802067D36000B2B87A /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510F157F2067D35F00B2B87A /* logo.jpg */; };
 		51AB851E2067CA7F00FAADAE /* StateGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A934852067CA64006205C7 /* StateGenerator.framework */; };
+		51CF186C2067D6DC0047EEAF /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF186B2067D6DC0047EEAF /* ListTableViewCell.swift */; };
+		51CF18702067D9520047EEAF /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF186F2067D9520047EEAF /* Demo.swift */; };
+		51CF18722067D9D80047EEAF /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18712067D9D80047EEAF /* Index.swift */; };
+		51CF18742067DF820047EEAF /* RandomImageGeneratorDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18732067DF820047EEAF /* RandomImageGeneratorDemoViewController.swift */; };
+		51CF18762067DFFF0047EEAF /* RandomImageGeneratorDemoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18752067DFFF0047EEAF /* RandomImageGeneratorDemoPresenter.swift */; };
+		51CF187F2067E7360047EEAF /* RandomImageGeneratorDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51CF187E2067E7360047EEAF /* RandomImageGeneratorDemoViewController.xib */; };
 		51D52BA82067C8E100898942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52BA72067C8E100898942 /* AppDelegate.swift */; };
 		51D52BAA2067C8E100898942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52BA92067C8E100898942 /* ViewController.swift */; };
 		51D52BAD2067C8E100898942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D52BAB2067C8E100898942 /* Main.storyboard */; };
@@ -40,7 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		510F157A2067D15600B2B87A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		510F157F2067D35F00B2B87A /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = Docs/logo.jpg; sourceTree = "<group>"; };
 		51A9347F2067CA64006205C7 /* StateGenerator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = StateGenerator.xcodeproj; sourceTree = "<group>"; };
+		51CF186B2067D6DC0047EEAF /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		51CF186F2067D9520047EEAF /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
+		51CF18712067D9D80047EEAF /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		51CF18732067DF820047EEAF /* RandomImageGeneratorDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageGeneratorDemoViewController.swift; sourceTree = "<group>"; };
+		51CF18752067DFFF0047EEAF /* RandomImageGeneratorDemoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageGeneratorDemoPresenter.swift; sourceTree = "<group>"; };
+		51CF187E2067E7360047EEAF /* RandomImageGeneratorDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomImageGeneratorDemoViewController.xib; sourceTree = "<group>"; };
 		51D52BA42067C8E100898942 /* StateGeneratorExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateGeneratorExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D52BA72067C8E100898942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51D52BA92067C8E100898942 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +78,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		510F15752067D10200B2B87A /* List */ = {
+			isa = PBXGroup;
+			children = (
+				51CF186E2067D92F0047EEAF /* Index */,
+				510F15792067D14700B2B87A /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		510F15772067D11100B2B87A /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				510F15782067D11F00B2B87A /* RandomImageGenerator */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		510F15782067D11F00B2B87A /* RandomImageGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				510F157D2067D19C00B2B87A /* Presenter */,
+				510F157C2067D19800B2B87A /* View */,
+			);
+			path = RandomImageGenerator;
+			sourceTree = "<group>";
+		};
+		510F15792067D14700B2B87A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				510F157A2067D15600B2B87A /* ListViewController.swift */,
+				51CF186B2067D6DC0047EEAF /* ListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		510F157C2067D19800B2B87A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51CF18732067DF820047EEAF /* RandomImageGeneratorDemoViewController.swift */,
+				51CF187E2067E7360047EEAF /* RandomImageGeneratorDemoViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		510F157D2067D19C00B2B87A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				51CF18752067DFFF0047EEAF /* RandomImageGeneratorDemoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		510F157E2067D35300B2B87A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				510F157F2067D35F00B2B87A /* logo.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		51A934802067CA64006205C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,9 +147,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		51CF186E2067D92F0047EEAF /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				51CF186F2067D9520047EEAF /* Demo.swift */,
+				51CF18712067D9D80047EEAF /* Index.swift */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
 		51D52B9B2067C8E100898942 = {
 			isa = PBXGroup;
 			children = (
+				510F157E2067D35300B2B87A /* Resources */,
 				51D52BBA2067CA0100898942 /* Frameworks */,
 				51D52BA62067C8E100898942 /* Examples */,
 				51D52BA52067C8E100898942 /* Products */,
@@ -91,6 +177,8 @@
 		51D52BA62067C8E100898942 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				510F15772067D11100B2B87A /* Demo */,
+				510F15752067D10200B2B87A /* List */,
 				51D52BA72067C8E100898942 /* AppDelegate.swift */,
 				51D52BA92067C8E100898942 /* ViewController.swift */,
 				51D52BAB2067C8E100898942 /* Main.storyboard */,
@@ -192,6 +280,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510F15802067D36000B2B87A /* logo.jpg in Resources */,
+				51CF187F2067E7360047EEAF /* RandomImageGeneratorDemoViewController.xib in Resources */,
 				51D52BB22067C8E100898942 /* LaunchScreen.storyboard in Resources */,
 				51D52BAF2067C8E100898942 /* Assets.xcassets in Resources */,
 				51D52BAD2067C8E100898942 /* Main.storyboard in Resources */,
@@ -206,7 +296,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				51D52BAA2067C8E100898942 /* ViewController.swift in Sources */,
+				51CF18702067D9520047EEAF /* Demo.swift in Sources */,
+				51CF18762067DFFF0047EEAF /* RandomImageGeneratorDemoPresenter.swift in Sources */,
+				51CF18722067D9D80047EEAF /* Index.swift in Sources */,
+				51CF186C2067D6DC0047EEAF /* ListTableViewCell.swift in Sources */,
 				51D52BA82067C8E100898942 /* AppDelegate.swift in Sources */,
+				510F157B2067D15600B2B87A /* ListViewController.swift in Sources */,
+				51CF18742067DF820047EEAF /* RandomImageGeneratorDemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RandomImageGeneratorDemoViewController" customModule="StateGeneratorExamples" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="roq-6r-A2O"/>
+                <outletCollection property="imageViews" destination="yZe-fO-Wzf" collectionClass="NSMutableArray" id="PXu-v1-SJD"/>
+                <outletCollection property="imageViews" destination="sIJ-PK-5JM" collectionClass="NSMutableArray" id="DNy-43-Ujm"/>
+                <outletCollection property="imageViews" destination="eez-1x-ies" collectionClass="NSMutableArray" id="zuv-35-gyd"/>
+                <outletCollection property="imageViews" destination="g7D-ag-Wtw" collectionClass="NSMutableArray" id="XFI-GQ-Y6p"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yZe-fO-Wzf">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="333.5"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sIJ-PK-5JM">
+                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="333.5"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eez-1x-ies">
+                    <rect key="frame" x="0.0" y="333.5" width="187.5" height="333.5"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g7D-ag-Wtw">
+                    <rect key="frame" x="187.5" y="333.5" width="187.5" height="333.5"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yZe-fO-Wzf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2g3-07-jNR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eez-1x-ies" secondAttribute="bottom" id="3JN-DL-iFi"/>
+                <constraint firstItem="eez-1x-ies" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="F3E-Aq-vSY"/>
+                <constraint firstItem="sIJ-PK-5JM" firstAttribute="leading" secondItem="yZe-fO-Wzf" secondAttribute="trailing" id="Jwf-ow-WCu"/>
+                <constraint firstItem="eez-1x-ies" firstAttribute="width" secondItem="yZe-fO-Wzf" secondAttribute="width" id="Mrc-zd-APQ"/>
+                <constraint firstItem="sIJ-PK-5JM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NcL-fS-de6"/>
+                <constraint firstItem="g7D-ag-Wtw" firstAttribute="top" secondItem="sIJ-PK-5JM" secondAttribute="bottom" id="OmL-08-1bZ"/>
+                <constraint firstItem="g7D-ag-Wtw" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="R51-A1-hAM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="g7D-ag-Wtw" secondAttribute="bottom" id="Vb5-xc-I8F"/>
+                <constraint firstItem="eez-1x-ies" firstAttribute="height" secondItem="yZe-fO-Wzf" secondAttribute="height" id="d3B-5t-ubd"/>
+                <constraint firstItem="eez-1x-ies" firstAttribute="top" secondItem="yZe-fO-Wzf" secondAttribute="bottom" id="eex-xx-2pB"/>
+                <constraint firstItem="sIJ-PK-5JM" firstAttribute="height" secondItem="yZe-fO-Wzf" secondAttribute="height" id="fFG-Im-Heo"/>
+                <constraint firstItem="g7D-ag-Wtw" firstAttribute="height" secondItem="yZe-fO-Wzf" secondAttribute="height" id="icp-DS-8Gp"/>
+                <constraint firstItem="yZe-fO-Wzf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="igf-Vs-NU3"/>
+                <constraint firstItem="g7D-ag-Wtw" firstAttribute="leading" secondItem="eez-1x-ies" secondAttribute="trailing" id="kam-db-SAJ"/>
+                <constraint firstItem="sIJ-PK-5JM" firstAttribute="width" secondItem="yZe-fO-Wzf" secondAttribute="width" id="l6C-KK-slf"/>
+                <constraint firstItem="sIJ-PK-5JM" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="pQc-gP-upN"/>
+                <constraint firstItem="g7D-ag-Wtw" firstAttribute="width" secondItem="yZe-fO-Wzf" secondAttribute="width" id="sKm-xI-BgE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

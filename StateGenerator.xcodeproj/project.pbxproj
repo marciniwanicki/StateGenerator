@@ -10,7 +10,16 @@
 		510F15742067CC3800B2B87A /* ConstTimeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F15732067CC3800B2B87A /* ConstTimeFunction.swift */; };
 		512EC5E720671A3400235056 /* StateGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512EC5DD20671A3400235056 /* StateGenerator.framework */; };
 		512EC5EC20671A3400235056 /* StateGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512EC5EB20671A3400235056 /* StateGeneratorTests.swift */; };
-		512EC5EE20671A3400235056 /* StateGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 512EC5E020671A3400235056 /* StateGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51CF18822067E8390047EEAF /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18812067E8390047EEAF /* Recorder.swift */; };
+		51CF18842067E8510047EEAF /* SequenceRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18832067E8510047EEAF /* SequenceRecorder.swift */; };
+		51CF18872067E86C0047EEAF /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18862067E86C0047EEAF /* Simulation.swift */; };
+		51CF18892067E8820047EEAF /* SequenceSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18882067E8820047EEAF /* SequenceSimulation.swift */; };
+		51CF188B2067E89F0047EEAF /* StateGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF188A2067E89F0047EEAF /* StateGenerator.swift */; };
+		51CF188D2067E9890047EEAF /* IndexAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF188C2067E9890047EEAF /* IndexAction.swift */; };
+		51CF188F2067E9980047EEAF /* WaitAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF188E2067E9980047EEAF /* WaitAction.swift */; };
+		51CF18912067E9A90047EEAF /* PerformAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18902067E9A90047EEAF /* PerformAction.swift */; };
+		51CF18932067E9B70047EEAF /* IteratorAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18922067E9B70047EEAF /* IteratorAction.swift */; };
+		51CF18952067EA210047EEAF /* ActionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18942067EA210047EEAF /* ActionOperation.swift */; };
 		51D52B84206724A900898942 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B83206724A900898942 /* Action.swift */; };
 		51D52B87206724CC00898942 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B86206724CC00898942 /* Direction.swift */; };
 		51D52B89206724D800898942 /* NumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B88206724D800898942 /* NumberType.swift */; };
@@ -35,11 +44,20 @@
 /* Begin PBXFileReference section */
 		510F15732067CC3800B2B87A /* ConstTimeFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstTimeFunction.swift; sourceTree = "<group>"; };
 		512EC5DD20671A3400235056 /* StateGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StateGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		512EC5E020671A3400235056 /* StateGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateGenerator.h; sourceTree = "<group>"; };
 		512EC5E120671A3400235056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		512EC5E620671A3400235056 /* StateGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		512EC5EB20671A3400235056 /* StateGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateGeneratorTests.swift; sourceTree = "<group>"; };
 		512EC5ED20671A3400235056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51CF18812067E8390047EEAF /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		51CF18832067E8510047EEAF /* SequenceRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceRecorder.swift; sourceTree = "<group>"; };
+		51CF18862067E86C0047EEAF /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
+		51CF18882067E8820047EEAF /* SequenceSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceSimulation.swift; sourceTree = "<group>"; };
+		51CF188A2067E89F0047EEAF /* StateGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateGenerator.swift; sourceTree = "<group>"; };
+		51CF188C2067E9890047EEAF /* IndexAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexAction.swift; sourceTree = "<group>"; };
+		51CF188E2067E9980047EEAF /* WaitAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitAction.swift; sourceTree = "<group>"; };
+		51CF18902067E9A90047EEAF /* PerformAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformAction.swift; sourceTree = "<group>"; };
+		51CF18922067E9B70047EEAF /* IteratorAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorAction.swift; sourceTree = "<group>"; };
+		51CF18942067EA210047EEAF /* ActionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionOperation.swift; sourceTree = "<group>"; };
 		51D52B83206724A900898942 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		51D52B86206724CC00898942 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		51D52B88206724D800898942 /* NumberType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberType.swift; sourceTree = "<group>"; };
@@ -91,11 +109,13 @@
 		512EC5DF20671A3400235056 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				51CF18852067E85B0047EEAF /* Simulation */,
+				51CF18802067E8270047EEAF /* Recorder */,
 				51D52B85206724BF00898942 /* Helpers */,
 				51D52B822067247700898942 /* Actions */,
 				51D52B812067247000898942 /* TimeFunctions */,
 				51D52B802067246A00898942 /* Generators */,
-				512EC5E020671A3400235056 /* StateGenerator.h */,
+				51CF188A2067E89F0047EEAF /* StateGenerator.swift */,
 				512EC5E120671A3400235056 /* Info.plist */,
 			);
 			path = Sources;
@@ -108,6 +128,24 @@
 				512EC5ED20671A3400235056 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		51CF18802067E8270047EEAF /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				51CF18812067E8390047EEAF /* Recorder.swift */,
+				51CF18832067E8510047EEAF /* SequenceRecorder.swift */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		51CF18852067E85B0047EEAF /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				51CF18862067E86C0047EEAF /* Simulation.swift */,
+				51CF18882067E8820047EEAF /* SequenceSimulation.swift */,
+			);
+			path = Simulation;
 			sourceTree = "<group>";
 		};
 		51D52B802067246A00898942 /* Generators */ = {
@@ -133,6 +171,10 @@
 			isa = PBXGroup;
 			children = (
 				51D52B83206724A900898942 /* Action.swift */,
+				51CF188C2067E9890047EEAF /* IndexAction.swift */,
+				51CF188E2067E9980047EEAF /* WaitAction.swift */,
+				51CF18902067E9A90047EEAF /* PerformAction.swift */,
+				51CF18922067E9B70047EEAF /* IteratorAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -142,6 +184,7 @@
 			children = (
 				51D52B86206724CC00898942 /* Direction.swift */,
 				51D52B88206724D800898942 /* NumberType.swift */,
+				51CF18942067EA210047EEAF /* ActionOperation.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -163,7 +206,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				512EC5EE20671A3400235056 /* StateGenerator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,16 +309,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51CF188F2067E9980047EEAF /* WaitAction.swift in Sources */,
+				51CF18912067E9A90047EEAF /* PerformAction.swift in Sources */,
 				510F15742067CC3800B2B87A /* ConstTimeFunction.swift in Sources */,
 				51D52B93206731CB00898942 /* RainbowColorsGenerator.swift in Sources */,
+				51CF18932067E9B70047EEAF /* IteratorAction.swift in Sources */,
+				51CF188D2067E9890047EEAF /* IndexAction.swift in Sources */,
 				51D52B84206724A900898942 /* Action.swift in Sources */,
+				51CF18822067E8390047EEAF /* Recorder.swift in Sources */,
+				51CF18842067E8510047EEAF /* SequenceRecorder.swift in Sources */,
 				51D52B89206724D800898942 /* NumberType.swift in Sources */,
 				51D52B962067320000898942 /* SingleValueGenerator.swift in Sources */,
 				51D52B982067322200898942 /* RandomImageGenerator.swift in Sources */,
 				51D52B8B2067253A00898942 /* TimeFunction.swift in Sources */,
+				51CF18892067E8820047EEAF /* SequenceSimulation.swift in Sources */,
+				51CF188B2067E89F0047EEAF /* StateGenerator.swift in Sources */,
 				51D52B87206724CC00898942 /* Direction.swift in Sources */,
 				51D52B91206731B300898942 /* IndexGenerator.swift in Sources */,
 				51D52B8F2067319D00898942 /* IteratorGenerator.swift in Sources */,
+				51CF18872067E86C0047EEAF /* Simulation.swift in Sources */,
+				51CF18952067EA210047EEAF /* ActionOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

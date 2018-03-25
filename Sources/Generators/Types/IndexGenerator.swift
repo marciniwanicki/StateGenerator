@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol IndexGenerator {
+public protocol IndexGenerator {
 
     associatedtype T
 
