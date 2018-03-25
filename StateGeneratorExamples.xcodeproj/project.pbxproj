@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		510F157B2067D15600B2B87A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F157A2067D15600B2B87A /* ListViewController.swift */; };
 		510F15802067D36000B2B87A /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510F157F2067D35F00B2B87A /* logo.jpg */; };
+		516E4DD52067FC5400997079 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516E4DD42067FC5400997079 /* DemoViewController.swift */; };
 		51AB851E2067CA7F00FAADAE /* StateGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A934852067CA64006205C7 /* StateGenerator.framework */; };
 		51CF186C2067D6DC0047EEAF /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF186B2067D6DC0047EEAF /* ListTableViewCell.swift */; };
 		51CF18702067D9520047EEAF /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF186F2067D9520047EEAF /* Demo.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		510F157A2067D15600B2B87A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		510F157F2067D35F00B2B87A /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = Docs/logo.jpg; sourceTree = "<group>"; };
+		516E4DD42067FC5400997079 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		51A9347F2067CA64006205C7 /* StateGenerator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = StateGenerator.xcodeproj; sourceTree = "<group>"; };
 		51CF186B2067D6DC0047EEAF /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		51CF186F2067D9520047EEAF /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 		510F15772067D11100B2B87A /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				516E4DD22067FC4100997079 /* Helper */,
 				510F15782067D11F00B2B87A /* RandomImageGenerator */,
 				51CF18972067F31C0047EEAF /* Presenter.swift */,
 			);
@@ -118,6 +121,14 @@
 				510F157F2067D35F00B2B87A /* logo.jpg */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		516E4DD22067FC4100997079 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				516E4DD42067FC5400997079 /* DemoViewController.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		51A934802067CA64006205C7 /* Products */ = {
@@ -283,6 +294,7 @@
 				51D52BA82067C8E100898942 /* AppDelegate.swift in Sources */,
 				510F157B2067D15600B2B87A /* ListViewController.swift in Sources */,
 				51CF18742067DF820047EEAF /* RandomImageGeneratorDemoViewController.swift in Sources */,
+				516E4DD52067FC5400997079 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
