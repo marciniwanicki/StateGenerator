@@ -10,7 +10,7 @@ import Foundation
 
 protocol Action {
 
-    typealias SleepFunction = (TimeFunction, Int) -> ()
+    typealias SleepFunction = (TimeFunction, Int) -> Void
     typealias Context = (
         queue: OperationQueue,
         direction: Direction
