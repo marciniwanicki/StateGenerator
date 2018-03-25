@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import StateGenerator
 import UIKit
+import StateGenerator
 
 class Presenter {
 
@@ -21,16 +21,18 @@ class Presenter {
     init(view: RandomImageGeneratorDemoView) {
         let size = CGSize(width: 400, height: 600)
         let delay: TimeInterval = 1.0
+        let imageGenerator = G.randomImage(size: size)
+
         generator
             .begin()
             .wait(delay)
-            .perform(RandomImageGenerator(size: size)) { [weak view] in view?.setImage1($0) }
+            .perform(imageGenerator) { [weak view] in view?.setImage1($0) }
             .wait(delay)
-            .perform(RandomImageGenerator(size: size)) { [weak view] in view?.setImage2($0) }
+            .perform(imageGenerator) { [weak view] in view?.setImage2($0) }
             .wait(delay)
-            .perform(RandomImageGenerator(size: size)) { [weak view] in view?.setImage3($0) }
+            .perform(imageGenerator) { [weak view] in view?.setImage3($0) }
             .wait(delay)
-            .perform(RandomImageGenerator(size: size)) { [weak view] in view?.setImage4($0) }
-            .run(repeats: Int.max, .forward)
+            .perform(imageGenerator) { [weak view] in view?.setImage4($0) }
+            .run(repeats: Int.max)
     }
 }

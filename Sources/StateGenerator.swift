@@ -8,6 +8,8 @@
 
 import Foundation
 
+public typealias SG = StateGenerator
+
 public class StateGenerator {
 
     fileprivate var simulations = [Simulation]()

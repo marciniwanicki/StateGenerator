@@ -68,7 +68,7 @@ public class SequenceRecorder: Recorder {
     }
 
     public func run(repeats: Int, _ directions: Direction...) -> Simulation {
-        return run(repeats: repeats, directions)
+        return run(repeats: repeats, directions.isEmpty ? [.forward] : directions)
     }
 
     public func run(repeats: Int, _ directions: [Direction]) -> Simulation {
