@@ -8,9 +8,9 @@
 
 import Foundation
 
-public typealias SG = StateGenerator
+public typealias S = Simulator
 
-public class StateGenerator {
+public class Simulator {
 
     fileprivate var simulations = [Simulation]()
 
@@ -30,7 +30,7 @@ public protocol SimulationHandler: class {
     func registerSimulation(_ simulation: Simulation)
 }
 
-extension StateGenerator: SimulationHandler {
+extension Simulator: SimulationHandler {
 
     public func registerSimulation(_ simulation: Simulation) {
         simulations.append(simulation)

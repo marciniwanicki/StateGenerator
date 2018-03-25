@@ -12,10 +12,10 @@ import StateGenerator
 
 class Presenter {
 
-    private let generator = StateGenerator()
+    private let simulator = Simulator()
 
     deinit {
-        generator.discard()
+        simulator.discard()
     }
 
     init(view: RandomImageGeneratorDemoView) {
@@ -23,7 +23,7 @@ class Presenter {
         let delay: TimeInterval = 1.0
         let imageGenerator = G.randomImage(size: size)
 
-        generator
+        simulator
             .begin()
             .wait(delay)
             .perform(imageGenerator) { [weak view] in view?.setImage1($0) }

@@ -15,7 +15,7 @@
 		51CF18842067E8510047EEAF /* SequenceRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18832067E8510047EEAF /* SequenceRecorder.swift */; };
 		51CF18872067E86C0047EEAF /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18862067E86C0047EEAF /* Simulation.swift */; };
 		51CF18892067E8820047EEAF /* SequenceSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18882067E8820047EEAF /* SequenceSimulation.swift */; };
-		51CF188B2067E89F0047EEAF /* StateGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF188A2067E89F0047EEAF /* StateGenerator.swift */; };
+		51CF188B2067E89F0047EEAF /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF188A2067E89F0047EEAF /* Simulator.swift */; };
 		51CF188D2067E9890047EEAF /* IndexAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF188C2067E9890047EEAF /* IndexAction.swift */; };
 		51CF188F2067E9980047EEAF /* WaitAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF188E2067E9980047EEAF /* WaitAction.swift */; };
 		51CF18912067E9A90047EEAF /* PerformAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18902067E9A90047EEAF /* PerformAction.swift */; };
@@ -54,7 +54,7 @@
 		51CF18832067E8510047EEAF /* SequenceRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceRecorder.swift; sourceTree = "<group>"; };
 		51CF18862067E86C0047EEAF /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
 		51CF18882067E8820047EEAF /* SequenceSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceSimulation.swift; sourceTree = "<group>"; };
-		51CF188A2067E89F0047EEAF /* StateGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateGenerator.swift; sourceTree = "<group>"; };
+		51CF188A2067E89F0047EEAF /* Simulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
 		51CF188C2067E9890047EEAF /* IndexAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexAction.swift; sourceTree = "<group>"; };
 		51CF188E2067E9980047EEAF /* WaitAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitAction.swift; sourceTree = "<group>"; };
 		51CF18902067E9A90047EEAF /* PerformAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformAction.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 				51D52B822067247700898942 /* Actions */,
 				51D52B812067247000898942 /* TimeFunctions */,
 				51D52B802067246A00898942 /* Generators */,
-				51CF188A2067E89F0047EEAF /* StateGenerator.swift */,
+				51CF188A2067E89F0047EEAF /* Simulator.swift */,
 				512EC5E120671A3400235056 /* Info.plist */,
 			);
 			path = Sources;
@@ -327,7 +327,7 @@
 				51D52B982067322200898942 /* RandomImageGenerator.swift in Sources */,
 				51D52B8B2067253A00898942 /* TimeFunction.swift in Sources */,
 				51CF18892067E8820047EEAF /* SequenceSimulation.swift in Sources */,
-				51CF188B2067E89F0047EEAF /* StateGenerator.swift in Sources */,
+				51CF188B2067E89F0047EEAF /* Simulator.swift in Sources */,
 				51D52B87206724CC00898942 /* Direction.swift in Sources */,
 				51D52B91206731B300898942 /* IndexGenerator.swift in Sources */,
 				51D52B8F2067319D00898942 /* IteratorGenerator.swift in Sources */,
