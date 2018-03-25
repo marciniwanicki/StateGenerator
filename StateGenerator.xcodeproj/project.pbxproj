@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510F15742067CC3800B2B87A /* ConstTimeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F15732067CC3800B2B87A /* ConstTimeFunction.swift */; };
 		512EC5E720671A3400235056 /* StateGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512EC5DD20671A3400235056 /* StateGenerator.framework */; };
 		512EC5EC20671A3400235056 /* StateGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512EC5EB20671A3400235056 /* StateGeneratorTests.swift */; };
 		512EC5EE20671A3400235056 /* StateGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 512EC5E020671A3400235056 /* StateGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		510F15732067CC3800B2B87A /* ConstTimeFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstTimeFunction.swift; sourceTree = "<group>"; };
 		512EC5DD20671A3400235056 /* StateGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StateGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		512EC5E020671A3400235056 /* StateGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateGenerator.h; sourceTree = "<group>"; };
 		512EC5E120671A3400235056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				51D52B8A2067253A00898942 /* TimeFunction.swift */,
+				510F15732067CC3800B2B87A /* ConstTimeFunction.swift */,
 			);
 			path = TimeFunctions;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510F15742067CC3800B2B87A /* ConstTimeFunction.swift in Sources */,
 				51D52B93206731CB00898942 /* RainbowColorsGenerator.swift in Sources */,
 				51D52B84206724A900898942 /* Action.swift in Sources */,
 				51D52B89206724D800898942 /* NumberType.swift in Sources */,

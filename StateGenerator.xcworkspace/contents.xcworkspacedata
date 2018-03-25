@@ -4,4 +4,7 @@
    <FileRef
       location = "group:StateGenerator.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:StateGeneratorExamples.xcodeproj">
+   </FileRef>
 </Workspace>

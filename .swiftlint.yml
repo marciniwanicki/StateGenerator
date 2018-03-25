@@ -8,6 +8,6 @@ included:
   - Sources
   - Tests
 
-variable_name:
+identifier_name:
   min_length:
     warning: 2

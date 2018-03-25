@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol TimeFunction {
+public protocol TimeFunction {
 
     func timeInterval(for index: Int, direction: Direction) -> TimeInterval
 }
