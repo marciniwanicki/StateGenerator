@@ -8,13 +8,14 @@ StateGenerator is a Swift library that allows to quickly simulate different mode
 ## RandomImageGenerator
 
 <table>
-  <tr>
-    <th width="70%">Code</th>
-    <th width="30%">Preview</th>
-  </tr>
-  <tr>
-    <td><div class="highlight highlight-source-swift">
-    <pre>
+   <tr>
+      <th width="70%">Code</th>
+      <th width="30%">Preview</th>
+   </tr>
+   <tr>
+      <td>
+         <div class="highlight highlight-source-swift">
+            <pre>
         let size = CGSize(width: 400, height: 600)
         let delay: TimeInterval = 1.0
         let imageGenerator = G.randomImage(size: size)
@@ -30,10 +31,10 @@ StateGenerator is a Swift library that allows to quickly simulate different mode
             .perform(imageGenerator) { [weak view] in view?.setImage4($0) }
             .run(repeats: Int.max)
     </pre>
-    </div>
-    </td>
-    <td>
-    ![RandomImageGenerator](https://raw.githubusercontent.com/marciniwanicki/StateGenerator/develop/Docs/RandomImageGenerator.gif)
-    </td>
-  </tr>
+         </div>
+      </td>
+      <td>
+         <img src="https://raw.githubusercontent.com/marciniwanicki/StateGenerator/develop/Docs/RandomImageGenerator.gif">
+      </td>
+   </tr>
 </table>
