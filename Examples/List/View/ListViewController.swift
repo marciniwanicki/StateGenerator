@@ -47,10 +47,6 @@ extension ListViewController {
 
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let demo = index.sections[indexPath.section].1[indexPath.row]
-        let viewController = demo.factory()
-
-        viewController.title = demo.title
-
-        navigationController?.pushViewController(viewController, animated: true)
+        navigationController?.pushViewController(demo.createViewController(), animated: true)
     }
 }

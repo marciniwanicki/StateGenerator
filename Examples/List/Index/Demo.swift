@@ -12,11 +12,19 @@ import UIKit
 class Demo {
 
     typealias ViewControllerFactory = () -> UIViewController
+
     let title: String
-    let factory: ViewControllerFactory
+
+    private let factory: ViewControllerFactory
 
     init(_ title: String, _ factory: @escaping ViewControllerFactory) {
         self.title = title
         self.factory = factory
+    }
+
+    func createViewController() -> UIViewController {
+        let viewController = factory()
+        viewController.title = title
+        return viewController
     }
 }
