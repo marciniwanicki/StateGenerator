@@ -10,6 +10,10 @@
 		512EC5E720671A3400235056 /* StateGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512EC5DD20671A3400235056 /* StateGenerator.framework */; };
 		512EC5EC20671A3400235056 /* StateGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512EC5EB20671A3400235056 /* StateGeneratorTests.swift */; };
 		512EC5EE20671A3400235056 /* StateGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 512EC5E020671A3400235056 /* StateGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51D52B84206724A900898942 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B83206724A900898942 /* Action.swift */; };
+		51D52B87206724CC00898942 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B86206724CC00898942 /* Direction.swift */; };
+		51D52B89206724D800898942 /* NumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B88206724D800898942 /* NumberType.swift */; };
+		51D52B8B2067253A00898942 /* TimeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B8A2067253A00898942 /* TimeFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		512EC5E620671A3400235056 /* StateGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		512EC5EB20671A3400235056 /* StateGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateGeneratorTests.swift; sourceTree = "<group>"; };
 		512EC5ED20671A3400235056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51D52B83206724A900898942 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		51D52B86206724CC00898942 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		51D52B88206724D800898942 /* NumberType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberType.swift; sourceTree = "<group>"; };
+		51D52B8A2067253A00898942 /* TimeFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,10 @@
 		512EC5DF20671A3400235056 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				51D52B85206724BF00898942 /* Helpers */,
+				51D52B822067247700898942 /* Actions */,
+				51D52B812067247000898942 /* TimeFunctions */,
+				51D52B802067246A00898942 /* Generators */,
 				512EC5E020671A3400235056 /* StateGenerator.h */,
 				512EC5E120671A3400235056 /* Info.plist */,
 			);
@@ -84,6 +96,38 @@
 				512EC5ED20671A3400235056 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		51D52B802067246A00898942 /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		51D52B812067247000898942 /* TimeFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				51D52B8A2067253A00898942 /* TimeFunction.swift */,
+			);
+			path = TimeFunctions;
+			sourceTree = "<group>";
+		};
+		51D52B822067247700898942 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				51D52B83206724A900898942 /* Action.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		51D52B85206724BF00898942 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				51D52B86206724CC00898942 /* Direction.swift */,
+				51D52B88206724D800898942 /* NumberType.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +192,7 @@
 				TargetAttributes = {
 					512EC5DC20671A3400235056 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					512EC5E520671A3400235056 = {
@@ -196,6 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D52B84206724A900898942 /* Action.swift in Sources */,
+				51D52B89206724D800898942 /* NumberType.swift in Sources */,
+				51D52B8B2067253A00898942 /* TimeFunction.swift in Sources */,
+				51D52B87206724CC00898942 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +383,7 @@
 		512EC5F220671A3400235056 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +396,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.iwanicki.StateGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +405,7 @@
 		512EC5F320671A3400235056 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +426,7 @@
 		512EC5F520671A3400235056 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +440,7 @@
 		512EC5F620671A3400235056 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
