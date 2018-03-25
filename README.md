@@ -15,22 +15,20 @@ StateGenerator is a Swift library that allows to quickly simulate different mode
    <tr>
       <td>
          <div class="highlight highlight-source-swift">
-            <pre>
-        let size = CGSize(width: 400, height: 600)
-        let delay: TimeInterval = 1.0
-        let imageGenerator = G.randomImage(size: size)
-        simulator
-            .begin()
-            .wait(delay)
-            .perform(imageGenerator) { [weak view] in view?.setImage1($0) }
-            .wait(delay)
-            .perform(imageGenerator) { [weak view] in view?.setImage2($0) }
-            .wait(delay)
-            .perform(imageGenerator) { [weak view] in view?.setImage3($0) }
-            .wait(delay)
-            .perform(imageGenerator) { [weak view] in view?.setImage4($0) }
-            .run(repeats: Int.max)
-    </pre>
+<pre>let size = CGSize(width: 400, height: 600)
+let delay: TimeInterval = 1.0
+let imageGenerator = G.randomImage(size: size)
+simulator
+   .begin()
+   .wait(delay)
+   .perform(imageGenerator) { [weak view] in view?.setImage1($0) }
+   .wait(delay)
+   .perform(imageGenerator) { [weak view] in view?.setImage2($0) }
+   .wait(delay)
+   .perform(imageGenerator) { [weak view] in view?.setImage3($0) }
+   .wait(delay)
+   .perform(imageGenerator) { [weak view] in view?.setImage4($0) }
+   .run(repeats: Int.max)</pre>
          </div>
       </td>
       <td>
