@@ -9,11 +9,7 @@ StateGenerator is a Swift library that allows to quickly simulate different mode
 
 <table>
    <tr>
-      <th width="70%">Code</th>
-      <th width="30%">Preview</th>
-   </tr>
-   <tr>
-      <td>
+      <td width="70%">
          <div class="highlight highlight-source-swift">
 <pre>
 let size = CGSize(width: 400, height: 600)
@@ -32,7 +28,7 @@ simulator
    .run(repeats: Int.max)</pre>
          </div>
       </td>
-      <td>
+      <td width="30%">
          <img src="https://raw.githubusercontent.com/marciniwanicki/StateGenerator/develop/Docs/RandomImageGenerator.gif">
       </td>
    </tr>
