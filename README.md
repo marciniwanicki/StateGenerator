@@ -19,7 +19,6 @@ StateGenerator is a Swift library that allows to quickly simulate different mode
 let size = CGSize(width: 400, height: 600)
 let delay: TimeInterval = 1.0
 let imageGenerator = G.randomImage(size: size)
-
 simulator
    .begin()
    .wait(delay)
