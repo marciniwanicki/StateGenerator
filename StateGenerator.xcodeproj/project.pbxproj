@@ -14,6 +14,11 @@
 		51D52B87206724CC00898942 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B86206724CC00898942 /* Direction.swift */; };
 		51D52B89206724D800898942 /* NumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B88206724D800898942 /* NumberType.swift */; };
 		51D52B8B2067253A00898942 /* TimeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B8A2067253A00898942 /* TimeFunction.swift */; };
+		51D52B8F2067319D00898942 /* IteratorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B8E2067319D00898942 /* IteratorGenerator.swift */; };
+		51D52B91206731B300898942 /* IndexGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B90206731B300898942 /* IndexGenerator.swift */; };
+		51D52B93206731CB00898942 /* RainbowColorsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B92206731CB00898942 /* RainbowColorsGenerator.swift */; };
+		51D52B962067320000898942 /* SingleValueGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B952067320000898942 /* SingleValueGenerator.swift */; };
+		51D52B982067322200898942 /* RandomImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D52B972067322200898942 /* RandomImageGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,11 @@
 		51D52B86206724CC00898942 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		51D52B88206724D800898942 /* NumberType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberType.swift; sourceTree = "<group>"; };
 		51D52B8A2067253A00898942 /* TimeFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFunction.swift; sourceTree = "<group>"; };
+		51D52B8E2067319D00898942 /* IteratorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorGenerator.swift; sourceTree = "<group>"; };
+		51D52B90206731B300898942 /* IndexGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexGenerator.swift; sourceTree = "<group>"; };
+		51D52B92206731CB00898942 /* RainbowColorsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowColorsGenerator.swift; sourceTree = "<group>"; };
+		51D52B952067320000898942 /* SingleValueGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleValueGenerator.swift; sourceTree = "<group>"; };
+		51D52B972067322200898942 /* RandomImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomImageGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,9 @@
 		51D52B802067246A00898942 /* Generators */ = {
 			isa = PBXGroup;
 			children = (
+				51D52B992067322B00898942 /* Types */,
+				51D52B92206731CB00898942 /* RainbowColorsGenerator.swift */,
+				51D52B972067322200898942 /* RandomImageGenerator.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -128,6 +141,16 @@
 				51D52B88206724D800898942 /* NumberType.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		51D52B992067322B00898942 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				51D52B90206731B300898942 /* IndexGenerator.swift */,
+				51D52B8E2067319D00898942 /* IteratorGenerator.swift */,
+				51D52B952067320000898942 /* SingleValueGenerator.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,10 +264,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D52B93206731CB00898942 /* RainbowColorsGenerator.swift in Sources */,
 				51D52B84206724A900898942 /* Action.swift in Sources */,
 				51D52B89206724D800898942 /* NumberType.swift in Sources */,
+				51D52B962067320000898942 /* SingleValueGenerator.swift in Sources */,
+				51D52B982067322200898942 /* RandomImageGenerator.swift in Sources */,
 				51D52B8B2067253A00898942 /* TimeFunction.swift in Sources */,
 				51D52B87206724CC00898942 /* Direction.swift in Sources */,
+				51D52B91206731B300898942 /* IndexGenerator.swift in Sources */,
+				51D52B8F2067319D00898942 /* IteratorGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
