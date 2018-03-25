@@ -16,7 +16,7 @@ class ListViewController: UITableViewController {
 
 /// DataSource
 extension ListViewController {
-    
+
     public override func numberOfSections(in tableView: UITableView) -> Int {
         return index.sections.count
     }
@@ -30,10 +30,15 @@ extension ListViewController {
     }
 
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: ListTableViewCell = tableView.dequeueReusableCell(withIdentifier: String(describing: ListTableViewCell.self), for: indexPath) as! ListTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ListTableViewCell.self),
+                                                 for: indexPath)
+        guard let listCell = cell as? ListTableViewCell else {
+            return cell
+        }
+
         let demo = index.sections[indexPath.section].1[indexPath.row]
-        cell.setTitle(demo.title)
-        return cell
+        listCell.setTitle(demo.title)
+        return listCell
     }
 }
 

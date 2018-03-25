@@ -19,9 +19,9 @@ class Index {
         self.sections = [
             ("Images", [
                 Demo("RandomImageGenerator") {
-                    RandomImageGeneratorDemoViewController(nibName: "RandomImageGeneratorDemoViewController", bundle: nil)
-                }
-                ]
+                    RandomImageGeneratorDemoViewController(nibName: "RandomImageGeneratorDemoViewController",
+                                                           bundle: nil)
+                }]
             )
         ]
     }

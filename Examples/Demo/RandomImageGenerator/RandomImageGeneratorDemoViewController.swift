@@ -31,7 +31,7 @@ extension RandomImageGeneratorDemoViewController: RandomImageGeneratorDemoView {
     func setImage1(_ image: UIImage) {
         imageViews[0].image = image
     }
-    
+
     func setImage2(_ image: UIImage) {
         imageViews[1].image = image
     }

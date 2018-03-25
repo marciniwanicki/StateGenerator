@@ -11,7 +11,7 @@ import StateGenerator
 import UIKit
 
 class Presenter {
-    
+
     private let generator = StateGenerator()
 
     deinit {
