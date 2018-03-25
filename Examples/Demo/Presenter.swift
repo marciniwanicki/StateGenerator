@@ -14,10 +14,6 @@ class Presenter {
 
     private let simulator = Simulator()
 
-    deinit {
-        simulator.discard()
-    }
-
     init(view: RandomImageGeneratorDemoView) {
         let size = CGSize(width: 400, height: 600)
         let delay: TimeInterval = 1.0
