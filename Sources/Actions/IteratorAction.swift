@@ -21,11 +21,10 @@ class IteratorAction<E, T: IteratorGenerator>: Action where E == T.I.Element {
     }
 
     func perform(with context: Context, sleep: SleepFunction) {
-        let sequence: [E] = context.direction == .forward
-            ? generator.makeIterator().filter { _ in true }
-            : generator.makeIterator().reversed()
+        let sequence = generator.makeIterator()
+        let array = context.direction == .forward ? Array(sequence) : sequence.reversed()
 
-        for (index, value) in sequence.enumerated() {
+        for (index, value) in array.enumerated() {
             context.queue.addOperation { [closure] in closure(value) }
             sleep(timeFunction, index)
         }

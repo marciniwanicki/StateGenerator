@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		510F157B2067D15600B2B87A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F157A2067D15600B2B87A /* ListViewController.swift */; };
 		510F15802067D36000B2B87A /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510F157F2067D35F00B2B87A /* logo.jpg */; };
+		513D624720697A0F00B80804 /* IteratorGeneratorDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513D624620697A0F00B80804 /* IteratorGeneratorDemoViewController.swift */; };
+		513D624920697A1F00B80804 /* IteratorGeneratorDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513D624820697A1F00B80804 /* IteratorGeneratorDemoViewController.xib */; };
 		516E4DD52067FC5400997079 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516E4DD42067FC5400997079 /* DemoViewController.swift */; };
 		51AB851E2067CA7F00FAADAE /* StateGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A934852067CA64006205C7 /* StateGenerator.framework */; };
 		51CF186C2067D6DC0047EEAF /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF186B2067D6DC0047EEAF /* ListTableViewCell.swift */; };
@@ -50,6 +52,8 @@
 /* Begin PBXFileReference section */
 		510F157A2067D15600B2B87A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		510F157F2067D35F00B2B87A /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = Docs/logo.jpg; sourceTree = "<group>"; };
+		513D624620697A0F00B80804 /* IteratorGeneratorDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorGeneratorDemoViewController.swift; sourceTree = "<group>"; };
+		513D624820697A1F00B80804 /* IteratorGeneratorDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IteratorGeneratorDemoViewController.xib; sourceTree = "<group>"; };
 		516E4DD42067FC5400997079 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		51A9347F2067CA64006205C7 /* StateGenerator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = StateGenerator.xcodeproj; sourceTree = "<group>"; };
 		51CF186B2067D6DC0047EEAF /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 			children = (
 				516E4DD22067FC4100997079 /* Helper */,
 				510F15782067D11F00B2B87A /* RandomImageGenerator */,
+				513D6244206979F500B80804 /* IteratorGenerator */,
+				51828AA4206829D400AAC791 /* SequenceGenerator */,
 				51CF18972067F31C0047EEAF /* Presenter.swift */,
 			);
 			path = Demo;
@@ -123,12 +129,28 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		513D6244206979F500B80804 /* IteratorGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				513D624620697A0F00B80804 /* IteratorGeneratorDemoViewController.swift */,
+				513D624820697A1F00B80804 /* IteratorGeneratorDemoViewController.xib */,
+			);
+			path = IteratorGenerator;
+			sourceTree = "<group>";
+		};
 		516E4DD22067FC4100997079 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				516E4DD42067FC5400997079 /* DemoViewController.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		51828AA4206829D400AAC791 /* SequenceGenerator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SequenceGenerator;
 			sourceTree = "<group>";
 		};
 		51A934802067CA64006205C7 /* Products */ = {
@@ -277,6 +299,7 @@
 				51D52BB22067C8E100898942 /* LaunchScreen.storyboard in Resources */,
 				51D52BAF2067C8E100898942 /* Assets.xcassets in Resources */,
 				51D52BAD2067C8E100898942 /* Main.storyboard in Resources */,
+				513D624920697A1F00B80804 /* IteratorGeneratorDemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +317,7 @@
 				51D52BA82067C8E100898942 /* AppDelegate.swift in Sources */,
 				510F157B2067D15600B2B87A /* ListViewController.swift in Sources */,
 				51CF18742067DF820047EEAF /* RandomImageGeneratorDemoViewController.swift in Sources */,
+				513D624720697A0F00B80804 /* IteratorGeneratorDemoViewController.swift in Sources */,
 				516E4DD52067FC5400997079 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

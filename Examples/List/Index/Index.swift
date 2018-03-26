@@ -22,6 +22,12 @@ class Index {
                     RandomImageGeneratorDemoViewController(nibName: "RandomImageGeneratorDemoViewController",
                                                            bundle: nil)
                 }]
+            ),
+            ("Other", [
+                Demo("IteratorGenerator") {
+                    IteratorGeneratorDemoViewController(nibName: "IteratorGeneratorDemoViewController",
+                                                        bundle: nil)
+                }]
             )
         ]
     }

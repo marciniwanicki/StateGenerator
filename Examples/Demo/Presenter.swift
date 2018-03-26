@@ -31,4 +31,15 @@ class Presenter {
             .perform(imageGenerator) { [weak view] in view?.setImage4($0) }
             .run(repeats: Int.max)
     }
+
+    init(view: IteratorGeneratorDemoView) {
+        simulator
+            .begin()
+            .perform((1...10).reversed(), 1) { [weak view] in view?.setText(String($0)) }
+            .perform() { [weak view] in view?.setText("🙌\nDONE") }
+            .wait(2.0)
+            .perform([UIColor.orange, UIColor.red, UIColor.purple], 2.0) { [weak view] in view?.setTextColor($0) }
+            .perform() { [weak view] in view?.setText("👍")}
+            .run()
+    }
 }
