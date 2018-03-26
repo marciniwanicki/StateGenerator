@@ -40,14 +40,13 @@ class Presenter {
             case monkey = "🐵"
             case thumbsup = "👍"
         }
-
         simulator
             .begin()
             .perform((1...5).reversed(), 1) { [weak view] in view?.setText(String($0)) }
             .perform { [weak view] in view?.setText("🙌\nDONE") }
             .wait(2.0)
             .perform([UIColor.orange, .red, .purple], 2.0) { [weak view] in view?.setTextColor($0) }
-            .perform([Symbol.grinning, Symbol.summer, Symbol.monkey, Symbol.thumbsup], 0.5) {
+            .perform([Symbol.grinning, .summer, .monkey, .thumbsup], 0.5) {
                 [weak view] in view?.setText($0.rawValue)
             }
             .run()
