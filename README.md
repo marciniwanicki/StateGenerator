@@ -5,7 +5,51 @@
 
 StateGenerator is a Swift library that allows to quickly simulate different model states for UI testing purposes while backend or domain logic is not ready yet.
 
-## RandomImageGenerator
+## Generators
+
+### IteratorGenerator 
+
+It's likely the most useful feature of the library. By default `Array` (`let array = [1, 2, 3]`), `CountableRange` (`let upToTen = 1..<10`)
+and `let throughTen = CountableClosedRange` (`1...10`) conform to IteratorGenerator protocol and can be used to generate data in defined periods of time.
+
+<table>
+   <tr>
+      <th width="70%">Code</th>
+      <th width="30%">Preview</th>
+   </tr>
+   <tr>
+      <td>
+         <div class="highlight highlight-source-swift">
+<pre>
+enum Symbol: String {
+    case grinning = "😀"
+    case summer = "⛄"
+    case monkey = "🐵"
+    case thumbsup = "👍"
+}
+simulator
+    .begin()
+    .perform((1...3).reversed(), 1) {
+         [weak view] in view?.setText(String($0))
+     }
+    .perform { [weak view] in view?.setText("🙌\nDONE") }
+    .wait(2.0)
+    .perform([UIColor.orange, .red, .purple], 2.0) {
+        [weak view] in view?.setTextColor($0)
+    }
+    .perform([Symbol.grinning, .summer, .monkey, .thumbsup], 0.5) {
+        [weak view] in view?.setText($0.rawValue)
+    }
+    .run()</pre>
+         </div>
+      </td>
+      <td>
+         <img src="https://raw.githubusercontent.com/marciniwanicki/StateGenerator/develop/Docs/IteratorGenerator.gif">
+      </td>
+   </tr>
+</table>
+
+### RandomImageGenerator
 
 <table>
    <tr>
@@ -44,44 +88,13 @@ As `RandomImageGenerator` is a `SingleValueGenerater`, the following lines give 
 .perform { [weak view] in view?.setImage1(imageGenerator.generate()) }
 ```
 
-## IteratorGenerator 
+## TimeFunction
 
-<table>
-   <tr>
-      <th width="70%">Code</th>
-      <th width="30%">Preview</th>
-   </tr>
-   <tr>
-      <td>
-         <div class="highlight highlight-source-swift">
-<pre>
-enum Symbol: String {
-    case grinning = "😀"
-    case summer = "⛄"
-    case monkey = "🐵"
-    case thumbsup = "👍"
-}
-simulator
-    .begin()
-    .perform((1...3).reversed(), 1) {
-         [weak view] in view?.setText(String($0))
-     }
-    .perform { [weak view] in view?.setText("🙌\nDONE") }
-    .wait(2.0)
-    .perform([UIColor.orange, .red, .purple], 2.0) {
-        [weak view] in view?.setTextColor($0)
-    }
-    .perform([Symbol.grinning, .summer, .monkey, .thumbsup], 0.5) {
-        [weak view] in view?.setText($0.rawValue)
-    }
-    .run()</pre>
-         </div>
-      </td>
-      <td>
-         <img src="https://raw.githubusercontent.com/marciniwanicki/StateGenerator/develop/Docs/IteratorGenerator.gif">
-      </td>
-   </tr>
-</table>
+TODO: Find time to put some notes here
+
+## Simulation
+
+TODO: Find time to put some notes here
 
 ## License
 
