@@ -38,7 +38,7 @@ simulator
    </tr>
 </table>
 
-As `RandomImageGenerator` is a `SingleValueGenerate`, the following lines give exactly the same results.
+As `RandomImageGenerator` is a `SingleValueGenerater`, the following lines give exactly the same results.
 ```Swift
 .perform(imageGenerator) { [weak view] in view?.setImage1($0) }
 .perform { [weak view] in view?.setImage1(imageGenerator.generate()) }
