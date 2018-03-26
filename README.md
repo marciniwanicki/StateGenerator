@@ -5,7 +5,29 @@
 
 StateGenerator is a Swift library that allows to quickly simulate different model states for UI testing purposes while backend or domain logic is not ready yet.
 
+## Simulation
+
+#### .begin
+
+TODO
+
+#### .wait
+
+TODO
+
+#### .perform
+
+![Perform](https://raw.githubusercontent.com/marciniwanicki/StateGenerator/develop/Docs/StateGenerator-Perform.png)
+
+TODO
+
+#### .run
+
+TODO
+
 ## Generators
+
+![Generator](https://raw.githubusercontent.com/marciniwanicki/StateGenerator/develop/Docs/StateGenerator-Generator.png)
 
 ### IteratorGenerator 
 
@@ -90,9 +112,13 @@ As `RandomImageGenerator` is a `SingleValueGenerater`, the following lines give 
 
 ## TimeFunction
 
+![TimeFunction](https://raw.githubusercontent.com/marciniwanicki/StateGenerator/develop/Docs/StateGenerator-TimeFunction.png)
+
 TODO
 
-## Simulation
+## Closure
+
+![Closure](https://raw.githubusercontent.com/marciniwanicki/StateGenerator/develop/Docs/StateGenerator-Closure.png)
 
 TODO
 
