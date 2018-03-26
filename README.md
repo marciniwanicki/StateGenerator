@@ -90,11 +90,11 @@ As `RandomImageGenerator` is a `SingleValueGenerater`, the following lines give 
 
 ## TimeFunction
 
-TODO: Find time to put some notes here
+TODO
 
 ## Simulation
 
-TODO: Find time to put some notes here
+TODO
 
 ## License
 
