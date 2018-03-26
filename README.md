@@ -1,4 +1,4 @@
-![StateGenerator](https://raw.githubusercontent.com/marciniwanicki/StateGenerator/develop/Docs/logo.jpg)
+![StateGenerator](https://raw.githubusercontent.com/marciniwanicki/StateGenerator/develop/Docs/logo.png)
 
 [![Build Status](https://travis-ci.org/marciniwanicki/StateGenerator.svg?branch=develop)](https://travis-ci.org/marciniwanicki/StateGenerator)
 [![MIT License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/marciniwanicki/StateGenerator/blob/master/LICENSE)

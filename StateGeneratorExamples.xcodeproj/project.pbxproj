@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		510F157B2067D15600B2B87A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F157A2067D15600B2B87A /* ListViewController.swift */; };
-		510F15802067D36000B2B87A /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 510F157F2067D35F00B2B87A /* logo.jpg */; };
 		513D624720697A0F00B80804 /* IteratorGeneratorDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513D624620697A0F00B80804 /* IteratorGeneratorDemoViewController.swift */; };
 		513D624920697A1F00B80804 /* IteratorGeneratorDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513D624820697A1F00B80804 /* IteratorGeneratorDemoViewController.xib */; };
 		516E4DD52067FC5400997079 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516E4DD42067FC5400997079 /* DemoViewController.swift */; };
+		519DFA74206991E0003CD08C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 519DFA73206991E0003CD08C /* logo.png */; };
 		51AB851E2067CA7F00FAADAE /* StateGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A934852067CA64006205C7 /* StateGenerator.framework */; };
 		51CF186C2067D6DC0047EEAF /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF186B2067D6DC0047EEAF /* ListTableViewCell.swift */; };
 		51CF18702067D9520047EEAF /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF186F2067D9520047EEAF /* Demo.swift */; };
@@ -51,10 +51,10 @@
 
 /* Begin PBXFileReference section */
 		510F157A2067D15600B2B87A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		510F157F2067D35F00B2B87A /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo.jpg; path = Docs/logo.jpg; sourceTree = "<group>"; };
 		513D624620697A0F00B80804 /* IteratorGeneratorDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorGeneratorDemoViewController.swift; sourceTree = "<group>"; };
 		513D624820697A1F00B80804 /* IteratorGeneratorDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IteratorGeneratorDemoViewController.xib; sourceTree = "<group>"; };
 		516E4DD42067FC5400997079 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		519DFA73206991E0003CD08C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Docs/logo.png; sourceTree = "<group>"; };
 		51A9347F2067CA64006205C7 /* StateGenerator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = StateGenerator.xcodeproj; sourceTree = "<group>"; };
 		51CF186B2067D6DC0047EEAF /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		51CF186F2067D9520047EEAF /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		510F157E2067D35300B2B87A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				510F157F2067D35F00B2B87A /* logo.jpg */,
+				519DFA73206991E0003CD08C /* logo.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -294,9 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				510F15802067D36000B2B87A /* logo.jpg in Resources */,
 				51CF187F2067E7360047EEAF /* RandomImageGeneratorDemoViewController.xib in Resources */,
 				51D52BB22067C8E100898942 /* LaunchScreen.storyboard in Resources */,
+				519DFA74206991E0003CD08C /* logo.png in Resources */,
 				51D52BAF2067C8E100898942 /* Assets.xcassets in Resources */,
 				51D52BAD2067C8E100898942 /* Main.storyboard in Resources */,
 				513D624920697A1F00B80804 /* IteratorGeneratorDemoViewController.xib in Resources */,
