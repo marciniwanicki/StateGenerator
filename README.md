@@ -82,3 +82,7 @@ simulator
       </td>
    </tr>
 </table>
+
+## License
+
+StateGenerator is released under the MIT license. [See LICENSE](https://github.com/marciniwanicki/StateGenerator/blob/develop/LICENSE) for details.
