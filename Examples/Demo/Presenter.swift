@@ -52,4 +52,16 @@ class Presenter {
             .run()
     }
     // swiftlint:enable nesting
-}
+
+    init(view: RainbowColorDemoView) {
+        var index = 0
+        simulator
+            .begin()
+            .perform(RainbowColorsGenerator(count: 30), 0.5) { [weak view] in
+                view?.setBackgroundColor($0, for: index)
+                index = (index + 1) % 4
+            }
+            .run(repeats: Int.max, .forward, .backward)
+        }
+    }
+

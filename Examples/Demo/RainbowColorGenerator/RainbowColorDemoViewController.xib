@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RainbowColorDemoViewController" customModule="StateGeneratorExamples" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="colorViews" destination="cNJ-mk-qeV" collectionClass="NSMutableArray" id="EDb-3U-13v"/>
+                <outletCollection property="colorViews" destination="oWd-pn-4dC" collectionClass="NSMutableArray" id="sNg-sh-VL0"/>
+                <outletCollection property="colorViews" destination="yHe-W3-itl" collectionClass="NSMutableArray" id="FQK-bm-0Li"/>
+                <outletCollection property="colorViews" destination="Ohl-6n-LrX" collectionClass="NSMutableArray" id="Wna-Gr-MoI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNJ-mk-qeV">
+                    <rect key="frame" x="0.0" y="64" width="375" height="151"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHe-W3-itl">
+                    <rect key="frame" x="0.0" y="365.5" width="375" height="151"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohl-6n-LrX">
+                    <rect key="frame" x="0.0" y="516.5" width="375" height="150.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWd-pn-4dC">
+                    <rect key="frame" x="0.0" y="215" width="375" height="150.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yHe-W3-itl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0dk-fe-vHs"/>
+                <constraint firstItem="oWd-pn-4dC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2Oq-yA-ay6"/>
+                <constraint firstItem="Ohl-6n-LrX" firstAttribute="height" secondItem="cNJ-mk-qeV" secondAttribute="height" id="2Yn-8n-BsR"/>
+                <constraint firstItem="cNJ-mk-qeV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4mh-43-krq"/>
+                <constraint firstItem="cNJ-mk-qeV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7dO-hS-YNn"/>
+                <constraint firstItem="oWd-pn-4dC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="E1m-Fv-Q0Q"/>
+                <constraint firstItem="oWd-pn-4dC" firstAttribute="height" secondItem="cNJ-mk-qeV" secondAttribute="height" id="HhP-bE-d4T"/>
+                <constraint firstItem="oWd-pn-4dC" firstAttribute="top" secondItem="cNJ-mk-qeV" secondAttribute="bottom" id="Ja3-TG-QXb"/>
+                <constraint firstItem="Ohl-6n-LrX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="L82-7m-6Ca"/>
+                <constraint firstItem="cNJ-mk-qeV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OeN-tK-Ang"/>
+                <constraint firstItem="yHe-W3-itl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Pc2-cL-DOP"/>
+                <constraint firstItem="Ohl-6n-LrX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Y9H-5q-2mG"/>
+                <constraint firstItem="yHe-W3-itl" firstAttribute="top" secondItem="oWd-pn-4dC" secondAttribute="bottom" id="aOk-1a-FX1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ohl-6n-LrX" secondAttribute="bottom" id="ji3-oH-KDl"/>
+                <constraint firstItem="yHe-W3-itl" firstAttribute="height" secondItem="cNJ-mk-qeV" secondAttribute="height" id="jxS-6q-cIQ"/>
+                <constraint firstItem="Ohl-6n-LrX" firstAttribute="top" secondItem="yHe-W3-itl" secondAttribute="bottom" id="x20-nZ-nH9"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

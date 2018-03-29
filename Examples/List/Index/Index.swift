@@ -23,6 +23,13 @@ class Index {
                                                            bundle: nil)
                 }]
             ),
+            ("Colors", [
+                Demo("RainbowColorGenerator") {
+                    RainbowColorDemoViewController(nibName:
+                        "RainbowColorDemoViewController",
+                                                   bundle: nil)
+                }]
+            ),
             ("Other", [
                 Demo("IteratorGenerator") {
                     IteratorGeneratorDemoViewController(nibName: "IteratorGeneratorDemoViewController",
