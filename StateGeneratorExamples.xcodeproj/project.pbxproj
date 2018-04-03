@@ -14,7 +14,8 @@
 		519DFA74206991E0003CD08C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 519DFA73206991E0003CD08C /* logo.png */; };
 		51A8E087206D6DAE006F4082 /* RainbowColorDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8E085206D6DAE006F4082 /* RainbowColorDemoViewController.swift */; };
 		51A8E088206D6DAE006F4082 /* RainbowColorDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A8E086206D6DAE006F4082 /* RainbowColorDemoViewController.xib */; };
-		51AB851E2067CA7F00FAADAE /* StateGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A934852067CA64006205C7 /* StateGenerator.framework */; };
+		51B93F4B20742A0E00480422 /* StateGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A934852067CA64006205C7 /* StateGenerator.framework */; };
+		51B93F4C20742A0E00480422 /* StateGenerator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51A934852067CA64006205C7 /* StateGenerator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51CF186C2067D6DC0047EEAF /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF186B2067D6DC0047EEAF /* ListTableViewCell.swift */; };
 		51CF18702067D9520047EEAF /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF186F2067D9520047EEAF /* Demo.swift */; };
 		51CF18722067D9D80047EEAF /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18712067D9D80047EEAF /* Index.swift */; };
@@ -49,7 +50,28 @@
 			remoteGlobalIDString = 512EC5DC20671A3400235056;
 			remoteInfo = StateGenerator;
 		};
+		51B93F4D20742A0E00480422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51A9347F2067CA64006205C7 /* StateGenerator.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 512EC5DC20671A3400235056;
+			remoteInfo = StateGenerator;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51B93F4F20742A0E00480422 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				51B93F4C20742A0E00480422 /* StateGenerator.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		510F157A2067D15600B2B87A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51AB851E2067CA7F00FAADAE /* StateGenerator.framework in Frameworks */,
+				51B93F4B20742A0E00480422 /* StateGenerator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,11 +257,13 @@
 				51D52BA02067C8E100898942 /* Sources */,
 				51D52BA12067C8E100898942 /* Frameworks */,
 				51D52BA22067C8E100898942 /* Resources */,
+				51B93F4F20742A0E00480422 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				51AB851B2067CA7B00FAADAE /* PBXTargetDependency */,
+				51B93F4E20742A0E00480422 /* PBXTargetDependency */,
 			);
 			name = StateGeneratorExamples;
 			productName = StateGeneratorExamples;
@@ -345,6 +369,11 @@
 			isa = PBXTargetDependency;
 			name = StateGenerator;
 			targetProxy = 51AB851A2067CA7B00FAADAE /* PBXContainerItemProxy */;
+		};
+		51B93F4E20742A0E00480422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StateGenerator;
+			targetProxy = 51B93F4D20742A0E00480422 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -478,6 +507,7 @@
 		51D52BB72067C8E100898942 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Examples/Info.plist;
@@ -492,6 +522,7 @@
 		51D52BB82067C8E100898942 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Examples/Info.plist;
