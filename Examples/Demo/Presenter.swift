@@ -64,4 +64,3 @@ class Presenter {
             .run(repeats: Int.max, .forward, .backward)
         }
     }
-
