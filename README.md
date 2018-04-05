@@ -7,6 +7,14 @@ StateGenerator is a Swift library that allows to quickly simulate different mode
 
 ## Simulation
 
+Before you start interacting with StateSimulator and writing your own simulations,
+you need to create an instance of `Simulator` class and retain it, ideally as a member of your class or struct.
+
+```Swift
+    private let simulator = Simulator()
+```
+`Simulator` is responsible for  keeping your simulations alive, once it's deallocated then all simulations are gone.
+
 #### .begin
 
 TODO
