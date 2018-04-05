@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-public typealias G = Generator
+public typealias G = Generators
 
-public class Generator {
+public class Generators {
 
     public static func randomImage(size: CGSize) -> RandomImageGenerator {
         return RandomImageGenerator(size: size)

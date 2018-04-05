@@ -12,8 +12,8 @@
 		513D624920697A1F00B80804 /* IteratorGeneratorDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 513D624820697A1F00B80804 /* IteratorGeneratorDemoViewController.xib */; };
 		516E4DD52067FC5400997079 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516E4DD42067FC5400997079 /* DemoViewController.swift */; };
 		519DFA74206991E0003CD08C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 519DFA73206991E0003CD08C /* logo.png */; };
-		51A8E087206D6DAE006F4082 /* RainbowColorDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8E085206D6DAE006F4082 /* RainbowColorDemoViewController.swift */; };
-		51A8E088206D6DAE006F4082 /* RainbowColorDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A8E086206D6DAE006F4082 /* RainbowColorDemoViewController.xib */; };
+		51A8E087206D6DAE006F4082 /* RainbowColorsDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A8E085206D6DAE006F4082 /* RainbowColorsDemoViewController.swift */; };
+		51A8E088206D6DAE006F4082 /* RainbowColorsDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51A8E086206D6DAE006F4082 /* RainbowColorsDemoViewController.xib */; };
 		51B93F4B20742A0E00480422 /* StateGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A934852067CA64006205C7 /* StateGenerator.framework */; };
 		51B93F4C20742A0E00480422 /* StateGenerator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51A934852067CA64006205C7 /* StateGenerator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51CF186C2067D6DC0047EEAF /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF186B2067D6DC0047EEAF /* ListTableViewCell.swift */; };
@@ -26,6 +26,8 @@
 		51D52BAD2067C8E100898942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D52BAB2067C8E100898942 /* Main.storyboard */; };
 		51D52BAF2067C8E100898942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51D52BAE2067C8E100898942 /* Assets.xcassets */; };
 		51D52BB22067C8E100898942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D52BB02067C8E100898942 /* LaunchScreen.storyboard */; };
+		51F0E6DC2076BCF4002B6596 /* RandomDateGeneratorDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0E6DA2076BCF4002B6596 /* RandomDateGeneratorDemoViewController.swift */; };
+		51F0E6DD2076BCF4002B6596 /* RandomDateGeneratorDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51F0E6DB2076BCF4002B6596 /* RandomDateGeneratorDemoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,8 +81,8 @@
 		513D624820697A1F00B80804 /* IteratorGeneratorDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IteratorGeneratorDemoViewController.xib; sourceTree = "<group>"; };
 		516E4DD42067FC5400997079 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		519DFA73206991E0003CD08C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Docs/logo.png; sourceTree = "<group>"; };
-		51A8E085206D6DAE006F4082 /* RainbowColorDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowColorDemoViewController.swift; sourceTree = "<group>"; };
-		51A8E086206D6DAE006F4082 /* RainbowColorDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RainbowColorDemoViewController.xib; sourceTree = "<group>"; };
+		51A8E085206D6DAE006F4082 /* RainbowColorsDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowColorsDemoViewController.swift; sourceTree = "<group>"; };
+		51A8E086206D6DAE006F4082 /* RainbowColorsDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RainbowColorsDemoViewController.xib; sourceTree = "<group>"; };
 		51A9347F2067CA64006205C7 /* StateGenerator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = StateGenerator.xcodeproj; sourceTree = "<group>"; };
 		51CF186B2067D6DC0047EEAF /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		51CF186F2067D9520047EEAF /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
@@ -94,6 +96,8 @@
 		51D52BAE2067C8E100898942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51D52BB12067C8E100898942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51D52BB32067C8E100898942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51F0E6DA2076BCF4002B6596 /* RandomDateGeneratorDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDateGeneratorDemoViewController.swift; sourceTree = "<group>"; };
+		51F0E6DB2076BCF4002B6596 /* RandomDateGeneratorDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomDateGeneratorDemoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				516E4DD22067FC4100997079 /* Helper */,
-				510F15782067D11F00B2B87A /* RandomImageGenerator */,
-				513D6244206979F500B80804 /* IteratorGenerator */,
-				51A8E084206D6D7D006F4082 /* RainbowColorGenerator */,
-				51828AA4206829D400AAC791 /* SequenceGenerator */,
+				51F0E6D82076BBD5002B6596 /* Color */,
+				51F0E6D62076BBB7002B6596 /* Date */,
+				51F0E6D72076BBC3002B6596 /* Image */,
+				51F0E6D92076BBE9002B6596 /* Other */,
 				51CF18972067F31C0047EEAF /* Presenter.swift */,
 			);
 			path = Demo;
@@ -173,20 +177,13 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		51828AA4206829D400AAC791 /* SequenceGenerator */ = {
+		51A8E084206D6D7D006F4082 /* RainbowColorsGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				51A8E085206D6DAE006F4082 /* RainbowColorsDemoViewController.swift */,
+				51A8E086206D6DAE006F4082 /* RainbowColorsDemoViewController.xib */,
 			);
-			path = SequenceGenerator;
-			sourceTree = "<group>";
-		};
-		51A8E084206D6D7D006F4082 /* RainbowColorGenerator */ = {
-			isa = PBXGroup;
-			children = (
-				51A8E085206D6DAE006F4082 /* RainbowColorDemoViewController.swift */,
-				51A8E086206D6DAE006F4082 /* RainbowColorDemoViewController.xib */,
-			);
-			path = RainbowColorGenerator;
+			path = RainbowColorsGenerator;
 			sourceTree = "<group>";
 		};
 		51A934802067CA64006205C7 /* Products */ = {
@@ -245,6 +242,55 @@
 				51A9347F2067CA64006205C7 /* StateGenerator.xcodeproj */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51F0E6D22076B38A002B6596 /* RandomDateGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				51F0E6DA2076BCF4002B6596 /* RandomDateGeneratorDemoViewController.swift */,
+				51F0E6DB2076BCF4002B6596 /* RandomDateGeneratorDemoViewController.xib */,
+			);
+			path = RandomDateGenerator;
+			sourceTree = "<group>";
+		};
+		51F0E6D52076B8A4002B6596 /* DatesGenerator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DatesGenerator;
+			sourceTree = "<group>";
+		};
+		51F0E6D62076BBB7002B6596 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				51F0E6D22076B38A002B6596 /* RandomDateGenerator */,
+				51F0E6D52076B8A4002B6596 /* DatesGenerator */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		51F0E6D72076BBC3002B6596 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				510F15782067D11F00B2B87A /* RandomImageGenerator */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		51F0E6D82076BBD5002B6596 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				51A8E084206D6D7D006F4082 /* RainbowColorsGenerator */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		51F0E6D92076BBE9002B6596 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				513D6244206979F500B80804 /* IteratorGenerator */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,8 +380,9 @@
 			files = (
 				51CF187F2067E7360047EEAF /* RandomImageGeneratorDemoViewController.xib in Resources */,
 				51D52BB22067C8E100898942 /* LaunchScreen.storyboard in Resources */,
-				51A8E088206D6DAE006F4082 /* RainbowColorDemoViewController.xib in Resources */,
+				51A8E088206D6DAE006F4082 /* RainbowColorsDemoViewController.xib in Resources */,
 				519DFA74206991E0003CD08C /* logo.png in Resources */,
+				51F0E6DD2076BCF4002B6596 /* RandomDateGeneratorDemoViewController.xib in Resources */,
 				51D52BAF2067C8E100898942 /* Assets.xcassets in Resources */,
 				51D52BAD2067C8E100898942 /* Main.storyboard in Resources */,
 				513D624920697A1F00B80804 /* IteratorGeneratorDemoViewController.xib in Resources */,
@@ -349,11 +396,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F0E6DC2076BCF4002B6596 /* RandomDateGeneratorDemoViewController.swift in Sources */,
 				51CF18982067F31C0047EEAF /* Presenter.swift in Sources */,
 				51CF18702067D9520047EEAF /* Demo.swift in Sources */,
 				51CF18722067D9D80047EEAF /* Index.swift in Sources */,
 				51CF186C2067D6DC0047EEAF /* ListTableViewCell.swift in Sources */,
-				51A8E087206D6DAE006F4082 /* RainbowColorDemoViewController.swift in Sources */,
+				51A8E087206D6DAE006F4082 /* RainbowColorsDemoViewController.swift in Sources */,
 				51D52BA82067C8E100898942 /* AppDelegate.swift in Sources */,
 				510F157B2067D15600B2B87A /* ListViewController.swift in Sources */,
 				51CF18742067DF820047EEAF /* RandomImageGeneratorDemoViewController.swift in Sources */,

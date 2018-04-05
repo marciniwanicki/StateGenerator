@@ -13,7 +13,7 @@ protocol RainbowColorDemoView: class {
     func setBackgroundColor(_ color: UIColor, for index: Int)
 }
 
-class RainbowColorDemoViewController: DemoViewController {
+class RainbowColorsDemoViewController: DemoViewController {
 
     @IBOutlet fileprivate var colorViews: [UIView]!
 
@@ -22,7 +22,7 @@ class RainbowColorDemoViewController: DemoViewController {
     }
 }
 
-extension RainbowColorDemoViewController: RainbowColorDemoView {
+extension RainbowColorsDemoViewController: RainbowColorDemoView {
 
     func setBackgroundColor(_ color: UIColor, for index: Int) {
         colorViews[index].backgroundColor = color

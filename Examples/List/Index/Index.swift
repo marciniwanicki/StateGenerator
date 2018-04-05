@@ -13,29 +13,18 @@ class Index {
 
     static let shared = Index()
 
-    let sections: [(String, [Demo])]
-
-    private init() {
-        self.sections = [
-            ("Images", [
-                Demo("RandomImageGenerator") {
-                    RandomImageGeneratorDemoViewController(nibName: "RandomImageGeneratorDemoViewController",
-                                                           bundle: nil)
-                }]
-            ),
-            ("Colors", [
-                Demo("RainbowColorGenerator") {
-                    RainbowColorDemoViewController(nibName:
-                        "RainbowColorDemoViewController",
-                                                   bundle: nil)
-                }]
-            ),
-            ("Other", [
-                Demo("IteratorGenerator") {
-                    IteratorGeneratorDemoViewController(nibName: "IteratorGeneratorDemoViewController",
-                                                        bundle: nil)
-                }]
-            )
+    let sections: [(String, [Demo])] = {
+        let names: [(String, [UIViewController.Type])] = [
+            ("Color", [RainbowColorsDemoViewController.self]),
+            ("Date", [RandomDateGeneratorDemoViewController.self]),
+            ("Image", [RandomImageGeneratorDemoViewController.self]),
+            ("Other", [IteratorGeneratorDemoViewController.self])
         ]
-    }
+
+        return names.map { (name, types) -> (String, [Demo]) in
+            (name, types.map { Demo($0) })
+        }
+    }()
+
+    private init() { }
 }

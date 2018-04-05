@@ -10,7 +10,7 @@
 		510F15742067CC3800B2B87A /* ConstTimeFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F15732067CC3800B2B87A /* ConstTimeFunction.swift */; };
 		512EC5E720671A3400235056 /* StateGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512EC5DD20671A3400235056 /* StateGenerator.framework */; };
 		512EC5EC20671A3400235056 /* StateGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512EC5EB20671A3400235056 /* StateGeneratorTests.swift */; };
-		516E4DDA20680A4400997079 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516E4DD920680A4400997079 /* Generator.swift */; };
+		516E4DDA20680A4400997079 /* Generators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516E4DD920680A4400997079 /* Generators.swift */; };
 		51CF18822067E8390047EEAF /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18812067E8390047EEAF /* Recorder.swift */; };
 		51CF18842067E8510047EEAF /* SequenceRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18832067E8510047EEAF /* SequenceRecorder.swift */; };
 		51CF18872067E86C0047EEAF /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF18862067E86C0047EEAF /* Simulation.swift */; };
@@ -49,7 +49,7 @@
 		512EC5E620671A3400235056 /* StateGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		512EC5EB20671A3400235056 /* StateGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateGeneratorTests.swift; sourceTree = "<group>"; };
 		512EC5ED20671A3400235056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		516E4DD920680A4400997079 /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		516E4DD920680A4400997079 /* Generators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generators.swift; sourceTree = "<group>"; };
 		51CF18812067E8390047EEAF /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		51CF18832067E8510047EEAF /* SequenceRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceRecorder.swift; sourceTree = "<group>"; };
 		51CF18862067E86C0047EEAF /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
@@ -153,10 +153,9 @@
 		51D52B802067246A00898942 /* Generators */ = {
 			isa = PBXGroup;
 			children = (
+				51F0E6D42076B801002B6596 /* Concretes */,
 				51D52B992067322B00898942 /* Types */,
-				516E4DD920680A4400997079 /* Generator.swift */,
-				51D52B92206731CB00898942 /* RainbowColorsGenerator.swift */,
-				51D52B972067322200898942 /* RandomImageGenerator.swift */,
+				516E4DD920680A4400997079 /* Generators.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -200,6 +199,15 @@
 				51D52B952067320000898942 /* SingleValueGenerator.swift */,
 			);
 			path = Types;
+			sourceTree = "<group>";
+		};
+		51F0E6D42076B801002B6596 /* Concretes */ = {
+			isa = PBXGroup;
+			children = (
+				51D52B92206731CB00898942 /* RainbowColorsGenerator.swift */,
+				51D52B972067322200898942 /* RandomImageGenerator.swift */,
+			);
+			path = Concretes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,7 +322,7 @@
 			files = (
 				51CF188F2067E9980047EEAF /* WaitAction.swift in Sources */,
 				51CF18912067E9A90047EEAF /* PerformAction.swift in Sources */,
-				516E4DDA20680A4400997079 /* Generator.swift in Sources */,
+				516E4DDA20680A4400997079 /* Generators.swift in Sources */,
 				510F15742067CC3800B2B87A /* ConstTimeFunction.swift in Sources */,
 				51D52B93206731CB00898942 /* RainbowColorsGenerator.swift in Sources */,
 				51CF18932067E9B70047EEAF /* IteratorAction.swift in Sources */,

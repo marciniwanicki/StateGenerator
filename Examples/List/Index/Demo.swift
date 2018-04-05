@@ -22,6 +22,16 @@ class Demo {
         self.factory = factory
     }
 
+    convenience init(_ viewControllerType: UIViewController.Type) {
+        let fullTypeName = NSStringFromClass(viewControllerType)
+        let typeName = fullTypeName.components(separatedBy: ".")[1]
+        let title = typeName.replacingOccurrences(of: "DemoViewController", with: "", options: .literal, range: nil)
+
+        self.init(title) {
+            return viewControllerType.init(nibName: typeName, bundle: nil)
+        }
+    }
+
     func createViewController() -> UIViewController {
         let viewController = factory()
         viewController.title = title
