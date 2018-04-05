@@ -15,7 +15,7 @@ class Index {
 
     let sections: [(String, [Demo])] = {
         let names: [(String, [UIViewController.Type])] = [
-            ("Color", [RainbowColorsDemoViewController.self]),
+            ("Color", [RainbowColorsGeneratorDemoViewController.self]),
             ("Date", [RandomDateGeneratorDemoViewController.self]),
             ("Image", [RandomImageGeneratorDemoViewController.self]),
             ("Other", [IteratorGeneratorDemoViewController.self])
